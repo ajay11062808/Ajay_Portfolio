@@ -23,8 +23,6 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import vinci from "./vinci.png";
-
-
 import ey from "./company/EY_Logo.png";
 
 export {
@@ -49,7 +47,6 @@ export {
   typescript,
   threejs,
   vinci,
-  folio,
   opn,
   ey,
 };
