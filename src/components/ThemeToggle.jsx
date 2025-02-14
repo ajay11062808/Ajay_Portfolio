@@ -1,5 +1,5 @@
 import useThemeStore from "../components/theme";
-// import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
+import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 
 const ThemeToggle = () => {
   const { theme, toggleTheme } = useThemeStore();
@@ -10,9 +10,9 @@ const ThemeToggle = () => {
       className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 transition-all"
     >
       {theme === "light" ? (
-        <p className="w-6 h-6 text-gray-800" >light</p>
+        <SunIcon className="w-6 h-6 text-gray-800" >light</SunIcon>
       ) : (
-        <p className="w-6 h-6 text-yellow-500">dark</p>
+        <MoonIcon className="w-6 h-6 text-yellow-500">dark</MoonIcon>
       )}
     </button>
   );
