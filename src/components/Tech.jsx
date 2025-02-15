@@ -32,7 +32,7 @@ const TechCard = ({ index, icon, name, description, category }) => {
         {/* Gradient Border */}
         <div className="absolute inset-0 green-pink-gradient rounded-xl blur-sm opacity-75" />
         {/* Card Content */}
-        <div className="relative bg-tertiary rounded-xl w-full h-full p-4 flex flex-col justify-center items-center gap-2 transition-all duration-300">
+        <div className="relative bg-gray-100 dark:bg-tertiary rounded-xl w-full h-full p-4 flex flex-col justify-center items-center gap-2 transition-all duration-300">
           {/* Icon with hover animation */}
           <motion.div
             animate={{
@@ -48,7 +48,7 @@ const TechCard = ({ index, icon, name, description, category }) => {
           </motion.div>
 
           {/* Technology Name */}
-          <p className="text-[14px] text-white text-center font-medium">{name}</p>
+          <p className="text-[14px] text-black dark:text-white text-center font-medium">{name}</p>
 
           {/* Category Badge
           <span className="absolute top-2 right-2 text-[10px] px-2 py-1 rounded-full bg-white/10 text-white/80">
@@ -133,8 +133,8 @@ const Tech = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My Technical Expertise</p>
-        <h2 className={styles.sectionHeadText}>Technologies.</h2>
+        <p className={`${styles.darksectionSubText} dark:${styles.sectionSubText}`}>My Technical Expertise</p>
+        <h2 className={`${styles.darksectionHeadText} dark:${styles.sectionHeadText}`}>Technologies.</h2>
       </motion.div>
 
       {/* Category Filter */}

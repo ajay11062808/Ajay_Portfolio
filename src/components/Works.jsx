@@ -15,7 +15,7 @@ const ProjectCard = ({ index, tags, image, source_code_link, name, description, 
         scale: 1,
         speed: 450,
       }}
-      className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+      className='bg-gray-100 dark:bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className="relative w-full h-[230px]">
           <img src={image} alt={name} className='w-full h-full rounded-2xl object-cover'/>
@@ -35,9 +35,9 @@ const ProjectCard = ({ index, tags, image, source_code_link, name, description, 
 
         <div className="mt-5">
           <div className="flex"></div>
-          <h3 className='text-white text-[1.5rem] font-bold'>{name}</h3>
+          <h3 className='text-black dark:text-white text-[1.5rem] font-bold'>{name}</h3>
 
-          <p className='text-[0.9rem] text-secondary mt-2'>{description}</p>
+          <p className='text-[0.9rem] text-black dark:text-secondary mt-2'>{description}</p>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
@@ -56,14 +56,14 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My works</p>
-        <h2 className={styles.sectionHeadText}>Recent projects.</h2>
+        <p className={`${styles.darksectionSubText} dark:${styles.sectionSubText}`}>My works</p>
+        <h2 className={`${styles.darksectionHeadText} dark:${styles.sectionHeadText}`}>Recent projects.</h2>
       </motion.div>
 
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.2, 1)}
-          className='mt-3 text-secondary text-[1rem] max-w-3xl leading-7'>
+          className='mt-3 text-black dark:text-secondary text-[1rem] max-w-3xl leading-7'>
 
             The following projects ... Just imagine i have written some cool ass shit here to introduce you to my projects. cool bla bla blaa ajay soo cool oohhhh myyy... hes soo coool woooowwwww... 
 

@@ -30,9 +30,7 @@ const ServiceCard = ({ index, icon, title }) => {
         >
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
           <h3
-            className={`text-[1.1rem] font-bold text-center transition-colors duration-300 ${
-              theme === "dark" ? "text-white" : "text-black"
-            }`}
+            className={`text-[1.1rem] font-bold text-center transition-colors duration-300 text-black dark:text-white`}
           >
             {title}
           </h3>
@@ -50,14 +48,14 @@ const About = () => {
       <motion.div variants={textVariant()}>
         <p
           className={`transition-colors duration-300 ${
-            theme === "dark" ? styles.sectionSubText : styles.sectionSubText
+            theme === "dark" ? styles.sectionSubText : styles.darksectionSubText
           }`}
         >
           Intro
         </p>
         <h2
           className={`transition-colors duration-300 ${
-            theme === "dark" ? styles.sectionHeadText: styles.sectionHeadText
+            theme === "dark" ? styles.sectionHeadText: styles.darksectionHeadText
           }`}
         >
           Overview.
@@ -67,7 +65,7 @@ const About = () => {
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className={`mt-4 text-[1rem] max-w-3xl leading-[1.875rem] transition-colors duration-300 ${
-          theme === "dark" ? "text-gray-300" : "text-secondary"
+          theme === "dark" ? "text-gray-300" : "text-gray-900"
         }`}
       >
         I am a web developer with a passion for creating innovative and user-friendly web and mobile apps. 

@@ -4,15 +4,15 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Earth = () => {
-  const earth = useGLTF("./planet/scene.gltf");
+const Email = () =>  {
+  const email = useGLTF("./email/result.gltf");
 
   return (
-    <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
+    <primitive object={email.scene} scale={11.5} position-x={0} position-y={-2} rotation-y={0} />
   );
 };
 
-const EarthCanvas = () => {
+const EmailCanvas = () => {
   return (
     <Canvas
       shadows
@@ -21,19 +21,28 @@ const EarthCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
       camera={{
         fov: 45,
-        near: 0.1,
+        near: 0.5,
         far: 200,
         position: [-4, 3, 6],
       }}
     >
       <Suspense fallback={<CanvasLoader />}>
+       {/* Global soft light */}
+        {/* <ambientLight intensity={1.5} /> */}
+
+        {/* Multiple directional lights */}
+        <directionalLight position={[5, 5, 5]} intensity={6} />
+        <directionalLight position={[-5, -5, -5]} intensity={4} />
+
+        {/* Extra soft lighting */}
+        {/* <pointLight position={[0, 5, 0]} intensity={2} /> */}
         <OrbitControls
           autoRotate
-          enableZoom={false}
+          enableZoom={true}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Earth />
+        <Email />
 
         <Preload all />
       </Suspense>
@@ -41,4 +50,4 @@ const EarthCanvas = () => {
   );
 };
 
-export default EarthCanvas;
+export default EmailCanvas;

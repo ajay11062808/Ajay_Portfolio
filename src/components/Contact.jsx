@@ -3,7 +3,7 @@ import { SectionWrapper } from '../hoc'
 import { motion } from 'framer-motion'
 import { slideIn } from '../utils/motion'
 import { styles } from '../styles'
-import { EarthCanvas } from './canvas'
+import { EmailCanvas } from './canvas'
 
 const Contact = () => {
   const formRef = useRef();
@@ -51,17 +51,17 @@ const Contact = () => {
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div
         variants={slideIn('left', "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl bg-opacity-40'
+        className='flex-[0.75] bg-gray-200 dark:bg-black-100 p-8 rounded-2xl bg-opacity-40'
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact</h3>
+        <p className={`${styles.darksectionSubText} dark:${styles.sectionSubText}`}>Get in touch</p>
+        <h3 className={`${styles.darksectionHeadText} dark:${styles.sectionHeadText}`}>Contact</h3>
         <form 
           ref={formRef}
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
         > 
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4 px-7">Name </span>
+            <span className="text-black dark:text-white font-medium mb-4 px-7">Name </span>
             <input type='text' name='name' placeholder='Your name goes here'
               value={form.name} 
               onChange={handleChange} 
@@ -71,7 +71,7 @@ const Contact = () => {
           </label>
           
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4 px-7">Email </span>
+            <span className="text-black dark:text-white font-medium mb-4 px-7">Email </span>
             <input type='email' name='email' placeholder='Your email goes here'
               value={form.email} 
               onChange={handleChange} 
@@ -81,7 +81,7 @@ const Contact = () => {
           </label>
           
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4 px-7">Message </span>
+            <span className="text-black dark:text-white font-medium mb-4 px-7">Message </span>
             <textarea name='message' placeholder='Your message here' rows='7'
               value={form.message} 
               onChange={handleChange} 
@@ -99,7 +99,7 @@ const Contact = () => {
       <motion.div variants={slideIn('right', "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[34.375rem] h-[21.875rem]'
       >
-        <EarthCanvas />
+        <EmailCanvas />
       </motion.div>
     </div>
   )

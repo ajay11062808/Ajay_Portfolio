@@ -5,7 +5,7 @@ const Footer = () => {
 
   return (
     <div className="xs:px-0 px-[5%]">
-      <div className="flex w-full bg-white dark:bg-tertiary">
+      <div className="flex w-full bg-gray-200 dark:bg-tertiary">
         <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
           <span className="text-sm text-gray-500 sm:text-center text-gray-800 dark:text-gray-400">
             © {currentYear} <a href="#" className="hover:underline">Ajay™</a>. All Rights Reserved.

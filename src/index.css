@@ -12,6 +12,17 @@
   scroll-behavior: smooth;
   color-scheme: dark;
 }
+:root {
+  --timeline-bg: #f8f7f7;
+  --timeline-text: #000000;
+  --timeline-arrow: #0f1012;
+}
+
+.dark {
+  --timeline-bg: #1d1836;
+  --timeline-text: #ffffff;
+  --timeline-arrow: #232631;
+}
 
 .hash-span {
   margin-top: -100px;
@@ -114,9 +125,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-html {
-  @apply transition-colors duration-300;
-}
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;

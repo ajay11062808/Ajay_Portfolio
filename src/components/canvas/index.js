@@ -1,4 +1,4 @@
-import EarthCanvas from "./Earth";
+import EmailCanvas from "./Email";
 import StarsCanvas from "./Stars";
 
-export { EarthCanvas, StarsCanvas };
+export { EmailCanvas, StarsCanvas };
