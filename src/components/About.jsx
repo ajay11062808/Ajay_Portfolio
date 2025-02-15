@@ -5,7 +5,7 @@ import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import { services } from "../constants/index";
 import { SectionWrapper } from "../hoc";
-import useThemeStore from "./theme"; // Import Zustand theme store
+import useThemeStore from "./theme"; 
 
 const ServiceCard = ({ index, icon, title }) => {
   const { theme } = useThemeStore(); // Get theme from Zustand

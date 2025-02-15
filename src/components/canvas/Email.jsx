@@ -28,17 +28,17 @@ const EmailCanvas = () => {
     >
       <Suspense fallback={<CanvasLoader />}>
        {/* Global soft light */}
-        {/* <ambientLight intensity={1.5} /> */}
+        <ambientLight intensity={3} />
 
         {/* Multiple directional lights */}
         <directionalLight position={[5, 5, 5]} intensity={6} />
         <directionalLight position={[-5, -5, -5]} intensity={4} />
 
         {/* Extra soft lighting */}
-        {/* <pointLight position={[0, 5, 0]} intensity={2} /> */}
+        <pointLight position={[0, 5, 0]} intensity={2} />
         <OrbitControls
           autoRotate
-          enableZoom={true}
+          enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
