@@ -4,27 +4,31 @@ import { navLinks } from '../constants'
 import { Link } from 'react-router-dom'
 import { logo, close, menu } from '../assets'
 import ThemeToggle from './ThemeToggle'
+import useThemeStore from './theme'
 const Navbar = () => {
 
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false)
+  const { theme } = useThemeStore();
 
 
   return (
-    <nav className={`${styles.paddingX} flex items-center py-2 z-20 fixed top-0 w-full bg-primary`}>
+    <nav className={`${styles.paddingX} flex items-center py-2 z-20 fixed top-0 w-full bg-gray-200 dark:bg-primary`}>
       <div className="flex items-center justify-between max-w-7xl mx-auto w-full">
         <Link to='/' className='flex gap-2 items-center' 
           onClick={() => {setActive(""); window.scrollTo(0,0);}}>         
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
 
-          <p className='text-white text-[1rem] cursor-pointer font-bold flex'>Ajay&nbsp; 
+          <p className='text-black dark:text-white text-[1rem] cursor-pointer font-bold flex'>Ajay&nbsp; 
           <span className='sm:block hidden'>| Portfolio</span>
           </p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
             <li key={link.id} 
-                className={`${active === link.title ? "text-white" : "text-secondary"} hover:text-white text-[1.1rem] font-medium cursor-pointer`} onClick={() => setActive(link.title)}
+            className={`${
+              active === link.title ? "text-black dark:text-white" : "text-gray-500 dark:text-grey-100"
+            } hover:text-black dark:hover:text-white text-[1.1rem] font-medium cursor-pointer`}onClick={() => setActive(link.title)}
                 >
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
