@@ -26,7 +26,7 @@ import vinci from "./vinci.png";
 import ey from "./company/EY_Logo.png";
 import react_native from "./tech/react-native.svg";
 import recoil from "./tech/recoil.png";
-import java from "./tech/Java-logo.png";
+import java from "./tech/Java-Logo.png";
 import python from "./tech/python.png";
 import aws from "./tech/Amazon.png";
 import azure from "./tech/azure.png";
