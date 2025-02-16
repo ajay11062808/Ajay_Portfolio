@@ -24,6 +24,15 @@ import threejs from "./tech/threejs.svg";
 
 import vinci from "./vinci.png";
 import ey from "./company/EY_Logo.png";
+import react_native from "./tech/react-native.svg";
+import recoil from "./tech/recoil.png";
+import java from "./tech/Java-logo.png";
+import python from "./tech/python.png";
+import aws from "./tech/Amazon.png";
+import azure from "./tech/azure.png";
+import kubernetes from "./tech/Kubernetes.png";
+import mysql from "./tech/mysql.png";
+import postgres from "./tech/postgres.png"
 
 export {
   logo,
@@ -49,4 +58,13 @@ export {
   vinci,
   opn,
   ey,
+  react_native,
+  recoil,
+  java,
+  python,
+  aws,
+  azure,
+  kubernetes,
+  mysql,
+  postgres,
 };

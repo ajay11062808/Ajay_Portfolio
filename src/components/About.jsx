@@ -28,7 +28,7 @@ const ServiceCard = ({ index, icon, title }) => {
             theme === "dark" ? "bg-gray-800" : "bg-gray-300"
           }`}
         >
-          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <img src={icon} alt={title} className="w-20 h-20 object-contain" />
           <h3
             className={`text-[1.1rem] font-bold text-center transition-colors duration-300 text-black dark:text-white`}
           >

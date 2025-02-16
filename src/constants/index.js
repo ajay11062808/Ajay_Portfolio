@@ -17,8 +17,16 @@ import {
   vinci,
   threejs,
   ey,
+  react_native,
+  recoil,
+  java,
+  python,
+  aws,
+  azure,
+  kubernetes,
+  mysql,
+  postgres
 } from "../assets";
-import { FaLaptopCode, FaMobileAlt, FaServer } from "react-icons/fa";
 
 export const navLinks = [
   {
@@ -62,54 +70,112 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
+    category: "Frontend",
   },
   {
     name: "TypeScript",
     icon: typescript,
+    category: "Frontend",
   },
   {
     name: "React JS",
     icon: reactjs,
+    category: "Frontend",
   },
   {
     name: "Redux Toolkit",
     icon: redux,
+    category:"Frontend",
+  },
+  {
+    name:"Recoil",
+    icon:recoil,
+    category:"Frontend"
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
+    category: "Frontend",
   },
   {
     name: "Node JS",
     icon: nodejs,
+    category: "Backend",
+  },
+  {
+    name: "Java",
+    icon: java,
+    category: "Backend",
+  },
+  {
+    name: "Python",
+    icon: python,
+    category: "Backend",
+  },
+  {
+    name: "MySQL",
+    icon: mysql,
+    category: "Database",
+  },
+  {
+    name: "PostgresSQL",
+    icon: postgres,
+    category: "Database",
   },
   {
     name: "MongoDB",
     icon: mongodb,
+    category: "Database",
   },
   {
     name: "Three JS",
     icon: threejs,
+    category: "Frontend",
   },
   {
     name: "Git",
     icon: git,
+    category: "Dev Tools",
   },
   {
-    name: "Figma",
-    icon: figma,
+    name: "AWS",
+    icon: aws,
+    category: "Cloud",
+  },
+  {
+    name: "Azure",
+    icon: azure,
+    category: "Cloud",
+  },
+  {
+    name: "Kubernetes",
+    icon: kubernetes,
+    category: "Dev Tools",
   },
   {
     name: "Docker",
     icon: docker,
+    category: "Dev Tools",
+  },
+  {
+    name: "Figma",
+    icon: figma,
+    category: "Design",
+  },
+  {
+    name: "React Native",
+    icon: react_native,
+    category: "Mobile",
   },
   {
     name: "HTML 5",
     icon: html,
+    category: "Frontend",
   },
   {
     name: "CSS 3",
     icon: css,
+    category: "Frontend",
   },
 ];
 
@@ -122,9 +188,12 @@ const experiences = [
     date: "October 2024 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
+      "Hands on knowledge of React, Java ,SQL,Jenkins,Kubernetes,Recoil,Kafka,Websockets",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Implementing responsive designs and ensuring that the web applications are mobile-friendly.",
+      "Working With React Native to develop mobile applications.",
+      "Creating reusable components and libraries for future use.",
+
     ],
   },
   {
@@ -134,7 +203,13 @@ const experiences = [
     iconBg: "#383E56",
     date: "July 2022 - September 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "In-depth understanding of Azure cloud computing services, including VM, IAM, VPC, and more.",
+      "Hands on Knowledge on LLMs used them in web applications,Implemented RESTful APIs to integrate with frontend applications.",
+      "Hands on knowledge of React, Java ,SQL,Jenkins,Docker",
+      "Created a Dashboard to bring all cloud resources(Azure,GCP,AWS) under one webpage using Grafana,Neo4j,PostgresDB ",
+      "Boosted client productivity by 40% by creating an intuitive, centralized dashboard to streamline cloud resource management.",
+      "Optimized CI/CD pipelines, cutting deployment times by approximately 30% with automated testing and pre-deployment validation.",
+      "Reduced critical code vulnerabilities by 20 percent through automated scans using SonarQube,Trivy(containers),SAST and DAST tools and code quality gates.",
     ],
   },
 ];
