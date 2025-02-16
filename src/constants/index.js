@@ -18,6 +18,7 @@ import {
   threejs,
   ey,
 } from "../assets";
+import { FaLaptopCode, FaMobileAlt, FaServer } from "react-icons/fa";
 
 export const navLinks = [
   {

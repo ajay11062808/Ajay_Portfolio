@@ -9,7 +9,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className={`bg-white dark:bg-primary z-0 relative`}>
-        <div className="bg-hero-pattern bg-no-repeat bg-cover bg-center">
+        <div className="bg-no-repeat bg-center">
           <Navbar />
           <Hero />
         </div>

@@ -7,23 +7,45 @@ const Hero = () => {
 
   return (
     <section
-      className={`relative top-[-1rem] w-full h-screen bg-cover transition-all duration-300 ${
-        theme === "dark" ? "bg-gray-900" : "bg-[url('/src/assets/herobg.png')]"
-      }`}
+      className={`relative top-[-1rem] w-full h-screen bg-cover transition-all bg-white dark:bg-gray-900`}
     >
       <div className={`${styles.paddingX} absolute inset-0 top-[7.5rem] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
-        <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
-        </div>
-
+        
+        {/* Left Side - Text Content */}
         <div className="relative -top-10">
-          <h1 className={`${styles.heroHeadText} transition-colors duration-300 ${theme === "dark" ? "text-white" : "text-black"}`}>
-            Hi I'm <span className="text-[#915eff]">Ajay</span>
+          <h1 className={`${styles.heroHeadText} transition-colors duration-300`}>
+            Hi, I'm <span className="text-[#ff5733]">Ajay</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 transition-colors duration-300 ${theme === "dark" ? "text-gray-300" : "text-gray-700"}`}>
-            Dedicated to Designing and <br className="sm:block hidden" /> developing mobile and web apps
+            Dedicated to Designing and <br className="sm:block hidden" /> 
+            Developing Scalable Mobile & Web Apps
           </p>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="text-lg text-gray-500 dark:text-gray-400 mt-3"
+          >
+            Passionate about creating intuitive UI/UX experiences <br />
+            and building robust full-stack applications.
+          </motion.p>
+
+          <div className="mt-6 flex gap-4">
+            <motion.a
+              href="#projects"
+              whileHover={{ scale: 1.05 }}
+              className="px-6 py-3 rounded-lg border-2 border-[#ff5733] text-[#ff5733] font-semibold transition-all hover:bg-[#ff5733] hover:text-white"
+            >
+              View My Work
+            </motion.a>
+            <motion.a
+              href="#contact"
+              whileHover={{ scale: 1.05 }}
+              className="px-6 py-3 rounded-lg border-2 border-[#ff5733] text-[#ff5733] font-semibold transition-all hover:bg-[#ff5733] hover:text-white"
+            >
+              Hire Me
+            </motion.a>
+          </div>
         </div>
       </div>
 

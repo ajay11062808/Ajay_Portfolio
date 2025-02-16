@@ -19,9 +19,7 @@ const Navbar = () => {
           onClick={() => {setActive(""); window.scrollTo(0,0);}}>         
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
 
-          <p className='text-black dark:text-white text-[1rem] cursor-pointer font-bold flex'>Ajay&nbsp; 
-          <span className='sm:block hidden'>| Portfolio</span>
-          </p>
+          <p className='text-black dark:text-white text-[1rem] cursor-pointer font-bold flex'>Ajay's Portfolio</p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
