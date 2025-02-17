@@ -236,7 +236,7 @@ const projects = [
   {
     name: "Portfolio",
     description:
-      "Vinci-ai is a web app that generats images from the user's prompts, you tell vinci what you want in the image or the image you want and it generate's the image. with support from the openai-api.",
+      "It is a Portfolio website that was designed using Reactjs and Three js(3D) elements.",
     tags: [
       {
         name: "react",
@@ -252,8 +252,8 @@ const projects = [
       },
     ],
     image: vinci,
-    source_code_link: "https://github.com/ajay11062808/Portfolio",
-    app_link: "",
+    source_code_link: "https://github.com/ajay11062808/Ajay_Portfolio",
+    app_link: "https://portfolio-of-ajayj.vercel.app",
   }
 ];
 
