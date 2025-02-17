@@ -53,14 +53,13 @@ const TechCard = ({ index, icon, name, description, category }) => {
             className="w-16 h-16 flex justify-center items-center"
           >
             <img src={icon || "/close.svg"} alt={name} className="w-3/4 h-3/4 object-contain" />
-            {/* <Icon className="w-3/4 h-3/4" /> */}
           </motion.div>
 
           {/* Technology Name */}
           <p className="text-[14px] text-black dark:text-white text-center font-medium">{name}</p>
 
           {/* Category Badge */}
-          <span className="absolute top-2 right-2 text-[10px] px-2 py-1 rounded-full bg-white/10 text-white/80">
+          <span className="absolute top-2 right-2 text-[10px] px-2 py-1 rounded-full bg-black/10 dark:bg-white/10 text-black dark:text-white/80">
             {category}
           </span>
         </div>

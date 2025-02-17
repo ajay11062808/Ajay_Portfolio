@@ -32,7 +32,10 @@ import aws from "./tech/Amazon.png";
 import azure from "./tech/azure.png";
 import kubernetes from "./tech/Kubernetes.png";
 import mysql from "./tech/mysql.png";
-import postgres from "./tech/postgres.png"
+import postgres from "./tech/postgres.png";
+import jenkins from "./tech/Jenkins.png";
+import postman from "./tech/postman.svg";
+import vscode from "./tech/vscode.png";
 
 export {
   logo,
@@ -67,4 +70,7 @@ export {
   kubernetes,
   mysql,
   postgres,
+  postman,
+  jenkins,
+  vscode,
 };

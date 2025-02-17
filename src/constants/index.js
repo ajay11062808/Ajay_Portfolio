@@ -25,7 +25,10 @@ import {
   azure,
   kubernetes,
   mysql,
-  postgres
+  postgres,
+  postman,
+  jenkins,
+  vscode,
 } from "../assets";
 
 export const navLinks = [
@@ -138,6 +141,11 @@ const technologies = [
     category: "Dev Tools",
   },
   {
+    name: "VS Code",
+    icon: vscode,
+    category: "Dev Tools",
+  },
+  {
     name: "AWS",
     icon: aws,
     category: "Cloud",
@@ -146,6 +154,16 @@ const technologies = [
     name: "Azure",
     icon: azure,
     category: "Cloud",
+  },
+  {
+    name: "Jenkins",
+    icon: jenkins,
+    category: "Dev Tools",
+  },
+  {
+    name: "Postman",
+    icon: postman,
+    category: "Dev Tools",
   },
   {
     name: "Kubernetes",

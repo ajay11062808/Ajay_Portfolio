@@ -62,16 +62,39 @@ const About = () => {
         </h2>
       </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className={`mt-4 text-[1rem] max-w-3xl leading-[1.875rem] transition-colors duration-300 ${
-          theme === "dark" ? "text-gray-300" : "text-gray-900"
-        }`}
-      >
-        I am a web developer with a passion for creating innovative and user-friendly web and mobile apps. 
-        With years of experience in the field, I specialize in crafting responsive, accessible, and secure 
-        web solutions that meet the needs of businesses and individuals alike.
-      </motion.p>
+        <motion.p
+            variants={fadeIn("", "", 0.1, 1)}
+            className={`mt-4 text-[1rem] max-w-3xl leading-[1.875rem] transition-colors duration-300 ${
+              theme === "dark" ? "text-gray-300" : "text-gray-900"
+            }`}
+          >
+            <ul className="list-disc pl-5">
+              <li>
+                I am a <strong>Full-Stack Developer, Cloud Engineer, and DevSecOps Specialist</strong> with a passion for building 
+                scalable, secure, and high-performance applications.
+              </li>
+              <li>
+                I have expertise in <strong>Cloud Computing, Kubernetes, Docker, CI/CD, DevSecOps, and AI-powered solutions</strong>, 
+                thriving at the intersection of development, security, and automation.
+              </li>
+              <li>
+                I specialize in:
+                <ul className="list-disc pl-5">
+                  <li>Orchestrating microservices with <strong>Kubernetes</strong></li>
+                  <li>Implementing <strong>security-focused CI/CD pipelines</strong></li>
+                  <li>Integrating <strong>AI solutions using Large Language Models (LLMs)</strong> to enhance automation and decision-making</li>
+                </ul>
+              </li>
+              <li>
+                Whether it's <strong>hardening infrastructure, optimizing cloud-native architectures, or leveraging AI for intelligent automation</strong>, I am always at the forefront of innovation.
+              </li>
+              <li>
+                Driven by a relentless curiosity for emerging technologies, I continuously learn and evolve to build 
+                <strong>next-generation, AI-powered, cloud-native solutions</strong>.
+              </li>
+            </ul>
+        </motion.p>
+
 
       <div className="flex gap-10 flex-wrap mt-20">
         {services.map((service, index) => (
