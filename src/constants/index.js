@@ -15,6 +15,8 @@ import {
   figma,
   docker,
   vinci,
+  splitmate,
+  ledgerbook,
   threejs,
   ey,
   react_native,
@@ -243,10 +245,6 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
         name: "tailwind",
         color: "pink-text-gradient",
       },
@@ -254,6 +252,51 @@ const projects = [
     image: vinci,
     source_code_link: "https://github.com/ajay11062808/Ajay_Portfolio",
     app_link: "https://portfolio-of-ajayj.vercel.app",
+  },
+  {
+    name: "SplitMate",
+    description:
+      "A full-stack web application designed to simplify expense tracking and bill splitting among friends, groups, or individuals — with a built-in real-time chat interface.",
+    tags: [
+      {
+        name: "nodejs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+    ],
+    image: splitmate,
+    source_code_link: "https://github.com/ajay11062808/SplitMate",
+    app_link: "https://github.com/ajay11062808/SplitMate",
+  },
+  {
+    name: "LedgerBook",
+    description:
+      "A comprehensive mobile application designed for farmers to manage financial transactions, loans, and agricultural activities — with multilingual support and real-time payment tracking.",
+    tags: [
+      {
+        name: "python",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react-native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "appwrite",
+        color: "green-text-gradient",
+      },
+    ],
+    image: ledgerbook,
+    source_code_link: "https://github.com/ajay11062808/LedgerBook",
+    app_link: "https://github.com/ajay11062808/LedgerBook",
+    
   }
 ];
 

@@ -23,6 +23,8 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import vinci from "./vinci.png";
+import splitmate from "./splitmate.png";
+import ledgerbook from "./ledgerbook.png";
 import ey from "./company/EY_Logo.png";
 import react_native from "./tech/react-native.svg";
 import recoil from "./tech/recoil.png";
@@ -59,6 +61,8 @@ export {
   typescript,
   threejs,
   vinci,
+  splitmate,
+  ledgerbook,
   opn,
   ey,
   react_native,
